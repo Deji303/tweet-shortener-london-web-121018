@@ -49,6 +49,6 @@ def shortened_tweet_truncator (string)
     new_string = "#{string[0..137]}..."
      
   end 
-  binding.pry
-  new_string
+  
+  puts new_string
 end 
