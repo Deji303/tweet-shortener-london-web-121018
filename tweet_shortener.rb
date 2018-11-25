@@ -45,10 +45,10 @@ end
 def shortened_tweet_truncator (string)
   new_string = selective_tweet_shortener(string); 
   
-  if selective_tweet_shortener(string) > 140
+  if selective_tweet_shortener(string).length > 140
     new_string = "#{string[0..137]}..."
      
   end 
   
-  puts new_string
+  new_string
 end 
