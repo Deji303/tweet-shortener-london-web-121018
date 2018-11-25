@@ -1,3 +1,4 @@
+require 'pry'
 # Write your code here.
 
 def dictionary 
@@ -43,6 +44,7 @@ end
 
 def shortened_tweet_truncator (string)
   new_string = selective_tweet_shortener(string); 
+  binding.pry 
   if selective_tweet_shortener(string) > 140
     new_string = "#{string[0..137]}..."
   end 
