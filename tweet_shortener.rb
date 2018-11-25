@@ -20,7 +20,7 @@ def word_substituter (string)
   string_array = string.split(" ")
   string_array.each do |x|
     dictionary.keys.each do |y|
-      if x == y
+      if x.downcase == y
         string_array[string_array.index(x)] = dictionary[y]
       end 
     end
