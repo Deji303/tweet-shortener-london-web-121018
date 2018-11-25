@@ -47,7 +47,8 @@ def shortened_tweet_truncator (string)
   
   if selective_tweet_shortener(string) > 140
     new_string = "#{string[0..137]}..."
-    binding.pry 
+     
   end 
+  binding.pry
   new_string
 end 
