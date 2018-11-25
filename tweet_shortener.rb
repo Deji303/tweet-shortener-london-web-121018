@@ -16,4 +16,14 @@ def dictionary
   }
 end 
 
-def word_substituter (string, dictionary)
+def word_substituter (string)
+  string_array = string.split(" ")
+  string_array.each do |x|
+    dictionary.keys.each do |y|
+      if x == y
+        string_array
+      end 
+    end
+  end 
+  
+end
