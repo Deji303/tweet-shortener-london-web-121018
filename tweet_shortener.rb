@@ -40,3 +40,4 @@ def selective_tweet_shortener (string)
   end 
   new_string
 end 
+
