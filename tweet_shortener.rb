@@ -41,3 +41,10 @@ def selective_tweet_shortener (string)
   new_string
 end 
 
+def shortened_tweet_truncator (string)
+  new_string = selective_tweet_shortener(string); 
+  if selective_tweet_shortener(string) > 140
+    new_string = "#{string[0..139]}..."
+  end 
+  new_string
+end 
