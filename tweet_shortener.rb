@@ -21,7 +21,7 @@ def word_substituter (string)
   string_array.each do |x|
     dictionary.keys.each do |y|
       if x == y
-        string_array.indexOf
+        string_array[string_array.index(x)] = dictionary[y]
       end 
     end
   end 
